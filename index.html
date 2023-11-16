@@ -154,7 +154,7 @@
              </div>
         </div>
 
-        <hr class="goles__hr">
+        <hr class="gole__hr">
 
         <div class="gole__topics">
 
@@ -173,15 +173,15 @@
 
           <img class="gole__caroco" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/1328d203-808c-492a-85e7-e2bc606d8452.png">
 
-          <div class="gole__grid--imagens-1">
-            <img class="gole__tops gole__tops--1" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/e463f676-80b2-44b4-bc53-b496c1c2f261.png">
-            <img class="gole__tops" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/e7a6910f-3a1b-4d1d-80ee-122c2d9608cf.png">
-            <img class="gole__tops gole__tops--3" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/6277f551-2809-45b2-936e-75f50172fd44.png">
+          <div class="topics__grid--imagens-1">
+            <img class="gole__tops topics__tops--1" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/e463f676-80b2-44b4-bc53-b496c1c2f261.png">
+            <img class="gole__tops topics__tops--2" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/e7a6910f-3a1b-4d1d-80ee-122c2d9608cf.png">
+            <img class="gole__tops topics__tops--3" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/6277f551-2809-45b2-936e-75f50172fd44.png">
           </div>
-          <div class="gole__grid--imagens-2">
-            <img class="gole__tops" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/04effd87-584a-4217-ae97-05db33cd7fba.png">
-            <img class="gole__tops gole__tops--5" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/6f4aa6b8-0af7-4cdc-89fd-fbc28355a6a2.png">
-            <img class="gole__tops" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/f5f3d5b1-ad45-4bd6-b0ee-177b639287fa.png">
+          <div class="topics__grid--imagens-2">
+            <img class="gole__tops topics__tops--4" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/04effd87-584a-4217-ae97-05db33cd7fba.png">
+            <img class="gole__tops topics__tops--5" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/6f4aa6b8-0af7-4cdc-89fd-fbc28355a6a2.png">
+            <img class="gole__tops topics__tops--6" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/f5f3d5b1-ad45-4bd6-b0ee-177b639287fa.png">
           </div>
         </div>
 
@@ -216,7 +216,7 @@
         <p>Então, puxe a sua cadeira, coloque um gelinho no copo e beba com a gente os goles de inspiração que você precisa para o ano que está chegando!  <strong>Esperamos que aproveite — e saúde!</strong></p>
 
         <div class="destaque__lancamento" flex >
-          <p>O lançamento <br> acontece no dia</p>
+          <p class="destaque__lancamento--response">O lançamento <br> acontece no dia</p>
           <img class="destaque__lancamento--img" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/abd47b76-0267-42be-81e6-e914824c63f9.png">
         </div>
 
@@ -601,10 +601,10 @@ body {
   margin-top: 30px;
 }
 
-.goles__hr {
+.gole__hr {
   border: none;
-  width: calc(100% + 300px);
-    transform: translateX(-150px);
+  width: calc(100% + 180px);
+  transform: translateX(-90px);
   border-bottom: 5px dotted #36383D;
 }
 
@@ -613,21 +613,6 @@ body {
   padding-left: 60px;
 }
 
-.gole__grid--imagens-1, .gole__grid--imagens-2  {
-  display: grid;
-  gap: 40px;
-  align-items: center;
-  padding-right: 190px;
-  margin-top: 40px;
-}
-
-.gole__grid--imagens-1 {
-  grid-template-columns: 1fr 1fr 1.3fr;
-}
-
-.gole__grid--imagens-2 {
-  grid-template-columns: 0.7fr 1.2fr 1fr;
-}
 
 .gole__tops {
   width: 100%;
@@ -672,6 +657,24 @@ body {
 
 .gole__topics h3 {
   position: relative;
+}
+
+/* topics */
+
+.topics__grid--imagens-1, .topics__grid--imagens-2  {
+  display: grid;
+  gap: 40px;
+  align-items: center;
+  padding-right: 190px;
+  margin-top: 40px;
+}
+
+.topics__grid--imagens-1 {
+  grid-template-columns: 1fr 1fr 1.3fr;
+}
+
+.topics__grid--imagens-2 {
+  grid-template-columns: 0.7fr 1.2fr 1fr;
 }
 
 /* topics */
@@ -938,7 +941,7 @@ footer {
   font-weight: 400;
   box-shadow: 4px 4px 5px rgba(0,0,0,0.3);
   transition: .2s;
-  transition-delay: .5s;
+  /* transition-delay: .5s; */
   z-index: 1;
   cursor: initial;
   transform: translatex(17px) translateY(34px);
@@ -979,7 +982,8 @@ footer {
 
 .forms__ballon--privacity {
   color:var(--red); 
-  transition: .2s
+  transition: .2s;
+  margin-top: 4px;
 }
 
 .forms__ballon--privacity:hover {
@@ -1157,6 +1161,10 @@ input::placeholder{
 
   /* Goles */
 
+  .gole__goles {
+    padding: 0;
+  }
+
   .gole__ctn {
     padding: 0;
     width: 100%;
@@ -1187,7 +1195,7 @@ input::placeholder{
     display: none;
   }
 
-  .goles__hr {
+  .gole__hr {
     width: calc(100% + 176px);
     transform: translateX(-88px);
   }
@@ -1250,7 +1258,29 @@ input::placeholder{
     align-items: center;
   }
 
-  .destaque__col-1 p, .destaque__col-2 p, .destaque__alert, .destaque__col-1 h3 {
+  .destaque__col-1 p, .destaque__col-2 p{
+    font-size: 16px;
+  }
+  
+  .destaque__alert br {
+    display: none;
+  }
+  
+  .destaque__lancamento--response {
+    line-height: 22px !important;
+  }
+
+  .destaque__lancamento {
+    gap: 22px;
+  }
+  
+  .destaque__lancamento--img {
+    height: 50px;  
+  }
+
+  .destaque__alert {
+    width: 100%;
+    text-align: center;
     font-size: 16px;
   }
 
@@ -1284,20 +1314,40 @@ input::placeholder{
   }
 
   [width] {
-    width: calc(100% - 40px);
+    width: calc(100% - 30px);
   }
 
   /* Cajuina */
+
+  .gole__title {
+    width: 100%;
+  }
+
+  .gole__title h1 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .gole__gap {
+    gap: 0;
+  }
 
   .cajuina__img {
     height: 60px;
     margin: 20px 0;
   }
 
+  .gole__h3 br{
+    display: none;
+  }
+
   .gole__h3 {
     width: initial;
     text-align: center;
     font-size: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #36383D;
+    border-top: 1px solid #36383D;
   }
 
   .gole__background {
@@ -1331,7 +1381,7 @@ input::placeholder{
     height: 100px;
   }
 
-  .goles__hr {
+  .gole__hr {
     width: 100%;
     transform: initial;
   }
@@ -1348,7 +1398,7 @@ input::placeholder{
     gap: 20px;
   } 
 
-  .goles__hr {
+  .gole__hr {
     border-width: 2px;
   }
 
@@ -1357,7 +1407,64 @@ input::placeholder{
     gap: 20px;
   } 
 
+  .gole__topics {
+    padding: 0;
+  }
+  
   /* Topics */
+
+  .topics h1 {
+    font-weight: 200;
+  }
+
+  .topics__grid--imagens-1, .topics__grid--imagens-2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 14px;
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    height: 260px;
+  }
+
+  .topics__tops--1, .topics__tops--2, .topics__tops--3, .topics__tops--4, .topics__tops--5, .topics__tops--6  {
+    position: absolute;
+  }
+
+  .topics__tops--1 {
+    top: 0;
+    width: 170px;
+    left: 0;
+  }
+
+  .topics__tops--2 {
+    left: 40px;
+    width: 180px;
+  }
+  
+  .topics__tops--3 {
+    width: 220px;
+    right: 0;
+    bottom: 0;
+  }
+
+  .topics__tops--4 {
+    width: 130px;
+    top: 0;
+    left: 0;
+  }
+
+  .topics__tops--5 {
+    width: 210px;
+    left: 40px;
+  }
+  
+  .topics__tops--6 {
+    right: 0;
+    width: 190px;
+    bottom: 0;
+  }
   
   .topics {
     gap: 20px;
@@ -1366,16 +1473,13 @@ input::placeholder{
 
   .topics__graphic {
     right: -52px;
-    top: -20px;
+    top: -25px;
+    width: 80px;
   }
 
   .topics__col-1 h1 {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-  }
-
-  .topics__graphic {
-      width: 80px;
   }
 
   .topics__p {
@@ -1387,6 +1491,10 @@ input::placeholder{
   .container {
     width: 100%;
     min-width: initial;
+  }
+  
+  .destaque__col-1 h3 {
+    font-size: 18px;
   }
 
   .topoform__title {
@@ -1405,19 +1513,24 @@ input::placeholder{
     margin-top: 44px;
   }
 
+  .destaque__col-1, .destaque__col-2, .destaque {
+    gap: 18px;
+  }
+
+  .destaque__col-1 p, .destaque__col-2 p {
+    font-size: 14px;
+  }
+  
   .destaque__img {
     display: none;
   }
 
   .destaque__img--response {
+    display: block;
     float: left;
     width: 90px;
     margin-right: 12px;
     object-fit: contain;
-  }
-
-  .destaque__col-2 {
-    column-count: 2;
   }
 
   .destaque__texts--response p {
@@ -1435,20 +1548,17 @@ input::placeholder{
 
   /* Sobre */
 
-  .sobre__container {
-    padding: 20px;
-  }
-
   .sobre__image {
     height: 286px;
     width: 100%;
     transform: translateX(-32px);
   }
-
+  
   .sobre__container {
     gap: 40px;
+    padding: 14px;
+    padding-bottom: 44px;
   }
-
 
   .sobre__texts h2 {
     font-size: 40px;
@@ -1457,6 +1567,7 @@ input::placeholder{
 
   .sobre__texts p {
     text-align: center;
+    font-size: 14px;
   }
 
   .sobre__texts h2 br{
@@ -1471,11 +1582,45 @@ input::placeholder{
     text-align: center;
   } 
 
+  .sobre__texts h2 {
+    margin: 0;
+  }
+
   /* Footer */
 
   .footer__h2 {
       margin-bottom: 30px;
   }  
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    gap: 28px;
+    padding: 20px 6px;
+  }
+
+  .gole__distorction {
+    width: calc(100% + 10px);
+    transform: rotate(1deg) translate(-5px);
+  }
+}
+
+
+@media screen and (max-width: 340px) {
+
+  [width] {
+    width: calc(100% - 10px);
+  }
+  
+  .gole__title h1 {
+    font-size: 28px;
+  }
+
+
+  .destaque__lancamento {
+    flex-direction: column;
+  }
 
 }
 
