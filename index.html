@@ -72,17 +72,18 @@
               
              <div class="forms">
               <div class="container">
+
+                <img class="container__gota" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/7f3e7e4b-887a-4379-a319-91a645d3e89c.png">
+
                 <div class="ballon">
-                  <button class="forms__ballon">
+                  <button class="forms__question">
                     <p>?</p>
                   </button>
                   <div class="forms__ballon">
                     <p>
                       A Caju precisa dos seus dados para enviar informações sobre produtos e serviços, além de conteúdos que podem te interessar. Você pode deixar de receber essas comunicações quando quiser. Para obter mais informações, veja nossa
                     </p>
-                    <br>
-                    <br>
-                    <a class="forms__privacity" href="https://www.caju.com.br/privacidade#:~:text=A%20Caju%20protege%20os%20direitos,com%20o%20disposto%20nesta%20Pol%C3%ADtica." target="_blank">Política de Privacidade</a>.
+                    <a class="forms__ballon--privacity" href="https://www.caju.com.br/privacidade#:~:text=A%20Caju%20protege%20os%20direitos,com%20o%20disposto%20nesta%20Pol%C3%ADtica." target="_blank">Política de Privacidade</a>.
                   </div>
                 </div>
 
@@ -91,7 +92,7 @@
   
                 <div class="topoform">
                     <div class="topoform__title">
-                        Preencha o formulário <br> para baixar o nosso e-book gratuito
+                        Preencha o formulário e receba o material no dia do lançamento
                     </div>
                 </div>
                 <h1></h1>
@@ -172,10 +173,12 @@
 
           <img class="gole__caroco" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/1328d203-808c-492a-85e7-e2bc606d8452.png">
 
-          <div class="gole__grid--imagens">
+          <div class="gole__grid--imagens-1">
             <img class="gole__tops gole__tops--1" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/e463f676-80b2-44b4-bc53-b496c1c2f261.png">
             <img class="gole__tops" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/e7a6910f-3a1b-4d1d-80ee-122c2d9608cf.png">
             <img class="gole__tops gole__tops--3" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/6277f551-2809-45b2-936e-75f50172fd44.png">
+          </div>
+          <div class="gole__grid--imagens-2">
             <img class="gole__tops" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/04effd87-584a-4217-ae97-05db33cd7fba.png">
             <img class="gole__tops gole__tops--5" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/6f4aa6b8-0af7-4cdc-89fd-fbc28355a6a2.png">
             <img class="gole__tops" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/f5f3d5b1-ad45-4bd6-b0ee-177b639287fa.png">
@@ -490,7 +493,7 @@ body::-webkit-scrollbar-thumb {
 
 [width] {
   width: calc(100% - 140px);  
-  max-width: 1540px;
+  max-width: 1240px;
   margin: auto;
 }
 
@@ -505,15 +508,18 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin: 20px 0;
+    height: 92.39px;
+
 }
 
 /* Goles */
 
 .gole__graph--1 {
   position: absolute;
-  left: -180px;
-  top: -118px;
-  width: 340px;
+  left: -158px;
+  top: -185px;
+  width: 434px;
   z-index: 1;
 }
 
@@ -539,10 +545,10 @@ body {
 .gole__ctn {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 211px;
+  grid-template-columns: 1fr 245px;
   width: calc(100% - 140px);
-  margin: 100px 0 60px 0;
-  padding-left: 140px;
+  margin: 22px 0 30px 0;
+  padding-left: 208px;
   color: white;
 }
 
@@ -555,14 +561,14 @@ body {
 }
 
 .gole__title h1 {
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 100;
   color: white;
 }
 
 .gole__edition {
   position: absolute;
-  width: 200px;
+  width: 180px;
   top: -110px;
   left: -20px;
 }
@@ -588,10 +594,11 @@ body {
 
 .gole__h3 {
   border-bottom: 2px solid #36383D;
-  font-size: 20px;
+  font-size: 24px;
   padding: 0 20px 8px 20px;
   width: max-content;
-  margin-top: 20px;
+  font-weight: 600;
+  margin-top: 30px;
 }
 
 .goles__hr {
@@ -606,31 +613,25 @@ body {
   padding-left: 60px;
 }
 
-.gole__grid--imagens {
+.gole__grid--imagens-1, .gole__grid--imagens-2  {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
   align-items: center;
   padding-right: 190px;
   margin-top: 40px;
 }
 
+.gole__grid--imagens-1 {
+  grid-template-columns: 1fr 1fr 1.3fr;
+}
+
+.gole__grid--imagens-2 {
+  grid-template-columns: 0.7fr 1.2fr 1fr;
+}
+
 .gole__tops {
   width: 100%;
-  height: 140px;
   object-fit: contain;
-}
-
-.gole__tops--1 {
-  /* width: 300px; */
-}
-
-.gole__tops--3 {
-  /* width: 400px; */
-}
-
-.gole__tops--5 {
-  /* width: 400px; */
 }
 
 .gole__goles {
@@ -716,7 +717,7 @@ body {
   display: grid;
   grid-template-columns: 1fr max-content 1fr ;
   gap: 40px;
-  margin: 142px auto;
+  margin: 112px auto 80px auto;
   width: calc(100% - 240px);
 }
 
@@ -774,16 +775,11 @@ body {
   line-height: 26px;
 }
 
-
 /* Sobre */
-
-.sobre {
-  margin-top: 140px;
-}
 
 .sobre__container {
   display: grid;
-  grid-template-columns: 1.21fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   background: white;
   padding: 40px;
@@ -880,36 +876,13 @@ footer {
   position: relative;
   display: flex;
   align-items: flex-end;
-  height: 690px;
+  height: 628px;
 }
   
 .forms__label {
   display: block;
   margin-top: 8px;
   font-size: 14px;
-}
-
-.forms__ballon {
-  position: absolute;
-  right: 16px;
-  border: 2px solid var(--red);
-  color: var(--red);
-  font-weight: 600;
-  height: 30px;
-  width: 30px;
-  font-size: 16px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: .2s;
-  z-index: 2;
-}
-
-.forms__ballon P {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 30px;
-  text-align: center;
 }
 
 .ballon {
@@ -922,8 +895,32 @@ footer {
   padding-top: 14px;
   width: 40px;
   height: 40px;
-  z-index: 1;
   cursor: pointer;
+  z-index: 1;
+}
+
+.forms__question {
+  position: absolute;
+  right: 16px;
+  border: 1px solid var(--red);
+  background: white;
+  color: var(--red);
+  font-weight: 600;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .2s;
+  z-index: 2;
+}
+
+.forms__question P {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  font-size: 12px;
+  text-align: center;
 }
 
 .forms__ballon {
@@ -944,7 +941,8 @@ footer {
   transition-delay: .5s;
   z-index: 1;
   cursor: initial;
-  transform: translatex(14px) translateY(44px);
+  transform: translatex(17px) translateY(34px);
+  font-size: 14px;
 }
 
 .forms__ballon p {
@@ -973,25 +971,25 @@ footer {
 .forms__ballon::before {
   content: '';
   position: absolute;
-  width: 60px;
+  width: 100%;
   height: 60px;
   top: -44px;
   right: 0;
-}
+} 
 
-.forms__privacity {
+.forms__ballon--privacity {
   color:var(--red); 
   transition: .2s
 }
 
-.forms__privacity:hover {
+.forms__ballon--privacity:hover {
   color: rgb(165, 0, 0); 
   transition: .2s
 }
 
 .forms__disclaimer {
   color: black;
-  font-size: 12px;
+  font-size: 11px;
   text-align: center;
 }
 
@@ -1001,9 +999,16 @@ footer {
   margin: 0 auto;
   transform: translateX(48px);
   padding: 20px;
-  min-width: 358px;
-  border-radius: 10px;
+  min-width: 400px;
+  border-radius: 16px;
   background-color: var(--yellow);
+}
+
+.container__gota {
+  position: absolute;
+  width: 110px;
+  left: -90px;
+  top: 20%;
 }
 
 .form-group {
@@ -1019,8 +1024,7 @@ input[type="email"],
 input[type="tel"],
 select {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
+  padding: 6px 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   border: none;
@@ -1063,7 +1067,7 @@ input::placeholder{
 .topoform__title {
   text-align: center;
   font-size: 20px;
-  padding: 10px 0 20px 0px;
+  padding: 10px 0 10px 0px;
   color: var(--red);
   font-weight: 600;
   border-radius: 20px 20px 0px 0px
