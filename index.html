@@ -144,13 +144,7 @@
                 <label class="forms__label" for="telefone">Qual é o seu telefone?</label>
                 <input type="tel" id="telefone" name="telefone" required="" placeholder="(xx) 00000-0000">
                 <input data-hash="003/001-001.059:018;001" type="submit" value="Quero receber" id="submitButton" class="sc-button">
-
-                <p class="forms__disclaimer">
-                  A Caju precisa dos seus dados para enviar informações sobre produtos e serviços, além de conteúdos que podem te interessar. Você pode deixar de receber essas comunicações quando quiser. Para obter mais informações, veja nossa Política de Privacidade.
-                </p>
               </div>
-
-
              </div>
         </div>
 
@@ -158,8 +152,6 @@
 
         <div class="gole__topics">
 
-
-         
           <div class="topics">
             <div class="topics__col-1">
               <div style="position: relative;">
@@ -252,15 +244,19 @@
         </p>
 
         <div class="sobre__sociais">
-          <a href="" class="btn__orange--link">
-            <button class="btn__orange">
+          <a class="btn__orange" href="https://cajuina.org/?utm_source=LP&utm_medium=referral&utm_campaign=goles-2024" target="_blank">
               Conheça Cajuína
-            </button>
           </a>
-          <div style="display: flex; gap: 20px;">
-            <img class="sobre__icons" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/b6f5e3d6-38c2-4049-bf2e-dba0f313e61f.png">
-            <img class="sobre__icons" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/c5f26029-4687-450e-b9b7-cbf199fa3cac.png">
-            <img class="sobre__icons" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/42d2abdb-dbfb-4eb7-ac3c-2119e8fd0358.png">
+          <div class="sobre__links" style="display: flex; gap: 20px;">
+            <a href="https://www.linkedin.com/company/nacajuina/" target="_blank">
+              <img class="sobre__icons" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/b6f5e3d6-38c2-4049-bf2e-dba0f313e61f.png">
+            </a>
+            <a href="https://open.spotify.com/show/2Q29fGQYLbP079lxJ9r5nb?si=00c1a7e338b849c6" target="_blank">
+              <img class="sobre__icons" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/c5f26029-4687-450e-b9b7-cbf199fa3cac.png">
+            </a>
+            <a href="https://www.instagram.com/nacajuina/" target="_blank">
+              <img class="sobre__icons" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/42d2abdb-dbfb-4eb7-ac3c-2119e8fd0358.png">
+            </a>
           </div>
         </div>
 
@@ -281,7 +277,8 @@
       <p>
           Caju® 2023. Todos os direitos reservados. <br>
           CNPJ 33.449.007/0001-44 <br>
-          Empresa Brasileira de Benefícios e Pagamentos LTDA.</p>
+          Empresa Brasileira de Benefícios e Pagamentos LTDA.
+        </p>
   </div>
 </footer>
 
@@ -828,6 +825,22 @@ body {
   gap: 30px;
 }
 
+.sobre__links a {
+  cursor: pointer;
+  transition: .2s;
+}
+
+.sobre__links a:hover {
+  transform: scale(1.1);
+  transition: .2s;
+}
+
+.sobre__icons {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
 .btn__orange {
   background: var(--orange__3);
   color: white;
@@ -837,14 +850,18 @@ body {
   font-size: 16px;
   font-weight: 800;
   letter-spacing: 1px;
+  text-decoration: none;
+  transition: .2s;
 }
 
-.sobre__icons {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
+.btn__orange:hover {
+  background: #eb6d00;
+  transition: .2s;
 }
 
+.btn__orange:focus {
+  background: #bb5700;
+}
 
 /* Footer */
 
@@ -879,7 +896,7 @@ footer {
   position: relative;
   display: flex;
   align-items: flex-end;
-  height: 628px;
+  height: 574px;
 }
   
 .forms__label {
@@ -1505,7 +1522,6 @@ input::placeholder{
     width: 100%;
     padding: 12px;
   }
-
 
   /* destaque */
 
